@@ -1,0 +1,44 @@
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    background-image: url("../images/forest.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+html{
+    min-height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+.page-head{
+    color: #ccc;
+    text-align: center;
+    font-size: 40px;
+}
+.game-info-div{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.game-info{
+    color: #ccc;
+    font-size: 28px;
+}
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.card{
+    background-color: aqua;
+    height: 175px;
+    width: 125px;
+}
