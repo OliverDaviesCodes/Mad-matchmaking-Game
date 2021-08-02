@@ -22,14 +22,13 @@ html{
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
+    margin: 50px;
 }
 .game-info{
     color: #ccc;
     font-size: 28px;
 }
-.game-container{
+.game-div{
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -41,4 +40,11 @@ html{
     background-color: aqua;
     height: 175px;
     width: 125px;
+    margin: 10px;
+}
+.card-div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
 }
