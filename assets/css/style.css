@@ -41,6 +41,7 @@ html{
     height: 175px;
     width: 125px;
     margin: 10px;
+    justify-content: center;
 }
 .card-div{
     display:flex;
