@@ -4,60 +4,10 @@
 ## Contents ## 
 # Table of contents
 
-- [Zen Studio](#zen-studio)
-  - [Contents](#contents)
-  - [User Experience (UX)](#user-experience-ux)
-    - [Project Goals](#project-goals)
-    - [User Goals](#user-goals)
-    - [User Stories](#user-stories)
-    - [Site Owner Goals](#site-owner-goals)
-    - [User requirements and expectations](#user-requirements-and-expectations)
-    - [Colours](#colours)
-    - [Font and styling](#font-and-styling)
-  - [About](#about)
-  - [Wireframes](#wireframes)
-    - [Differences in deployed version:](#differences-in-deployed-version)
-    - [Differences in deployed version:](#differences-in-deployed-version)
-    - [Differences in deployed version:](#differences-in-deployed-version)
-    - [Differences in deployed version:](#differences-in-deployed-version)
-    - [Differences in deployed version:](#differences-in-deployed-version)
-  - [Features](#features)
-    - [Navbar Features](#navbar-features)
-    - [Home Page Features](#home-page-features)
-- [](#)
-    - [Activities Page Features](#activities-page-features)
-- [](#)
-    - [Who We Are Page Features](#who-we-are-page-features)
-- [](#)
-    - [Contact Page Features](#contact-page-features)
-- [](#)
-    - [Booking Page Features](#booking-page-features)
-    - [Footer](#footer)
-    - [Features left to implement](#features-left-to-implement)
-  - [Technologies Used](#technologies-used)
-    - [Languages](#languages)
-    - [Libraries and frameworks Used](#libraries-and-frameworks-used)
-    - [Tools](#tools)
-  - [Testing](#testing)
-    - [functionality Testing](#functionality-testing)
-    - [W3C Markup Validator](#w3c-markup-validator)
-    - [W3CSS Validator](#w3css-validator)
-  - [Deployment](#deployment)
-  - [Credit](#credit)
-    - [Content](#content)
-    - [Media](#media)
-    - [logo](#logo)
-    - [index.html](#indexhtml)
-    - [activities.html](#activitieshtml)
-    - [about.html](#abouthtml)
-    - [Contact.html](#contacthtml)
-    - [booking.html](#bookinghtml)
-  - [Acknowledgements](#acknowledgements)
-
 ## User Experience (UX)
 
 ### Project Goals
-
+The goals of this project is to create a simple card matchmaking game focused on the ability to match two cards from memory. This site should be user friendly, easily accessible
 
 ### User Goals
 
