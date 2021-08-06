@@ -43,10 +43,11 @@ html{
     width: 125px;
     margin: 10px;
     justify-content: center;
-    border-radius: 12px;
+    border-radius: 10px;
     border-width: 1px;
     border-style:solid;
 }
+
 .card-div{
     display:flex;
     flex-wrap: wrap;
@@ -63,20 +64,30 @@ html{
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
-    border-radius: 12px;
-    border-width: 1px;
-    border-style:solid;
     overflow: hidden;
 }
+.card.visible .backface{
+    transform: rotateY(-180deg);
+}
+.card.visible .frontface {
+    transform: rotateY(0);
+}
+
 .frontface{
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
 }
 
 .animals{
-    align-items: flex-start;
+    align-items: flex-start; 
     transition: transform 100ms ease-in-out;
     width: 100px;
+    height:100px;
+    transform: scale(1);
 }
-.card-back:hover .elephant{
+.backface:hover .animals{
+    transform: scale(1.1);
+    /*This isn't working*/
+}
+.backface:hover {
     transform: translateY(0);
 }
