@@ -34,18 +34,15 @@ html{
     grid-gap: 10px;
     margin-top: 50px;
     justify-content: center;
+    perspective: 500px;
 }
 
 .card{
     position: relative;
-    background-color: #a7bbac;
     height: 175px;
     width: 125px;
     margin: 10px;
     justify-content: center;
-    border-radius: 10px;
-    border-width: 1px;
-    border-style:solid;
 }
 
 .card-div{
@@ -57,6 +54,7 @@ html{
     
 }
 .card-face{
+    background-color: #a7bbac;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -65,11 +63,16 @@ html{
     align-items: center;
     backface-visibility: hidden;
     overflow: hidden;
+    transition: transform 500ms ease-in-out;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style:solid;
 }
-.card.visible .backface{
+
+.card:hover .backface{
     transform: rotateY(-180deg);
 }
-.card.visible .frontface {
+.card:hover .frontface {
     transform: rotateY(0);
 }
 
@@ -86,8 +89,17 @@ html{
 }
 .backface:hover .animals{
     transform: scale(1.1);
-    /*This isn't working*/
 }
 .backface:hover {
     transform: translateY(0);
+}
+.logo{
+    align-items: flex-start; 
+    transition: transform 100ms ease-in-out;
+    width: 125px;
+    height:125px;
+    transform: scale(1);
+}
+.logo:hover{
+    transform: scale(1.2);
 }
