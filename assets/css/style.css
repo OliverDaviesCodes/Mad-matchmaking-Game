@@ -69,13 +69,62 @@ html{
     border-style:solid;
 }
 
-.card:hover .backface{
+.card.visible .backface{
     transform: rotateY(-180deg);
 }
-.card:hover .frontface {
+.card.visible .frontface {
     transform: rotateY(0);
 }
+.card.matched .animals{
+    animation: dance 1s linear infinite 250ms;
+}
+@keyframes dance {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    75%{
+        transform: rotate(30deg);
+    }
+}
 
+.game-overlay{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #b4d8bd;
+  transition: background-color 500ms, font-size 500ms;
+}
+.game-overlay.visible{
+    display: flex;
+    flex-direction: column;
+    animation: grow 700ms forwards;
+}
+
+.game-overlay-small{
+    font-size: .3em;
+    color: #b4d8bd;
+}
+
+@keyframes grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+    to {
+        background-color: rgba(70, 103, 80, 0.7);
+        font-size: 7em ;
+    }
+}
 .frontface{
     transform: rotateY(180deg);
 }
