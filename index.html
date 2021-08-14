@@ -9,22 +9,36 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    
     <title>Mad-Matchmaking Game</title>
 </head>
+
 <body>
     <!--This is the Nav container-->
-    <div class="playstyle">
-        <div class="info">
-            
-        </div>
-        <div class="difficulty">
+    <nav>
+        <div class="navbar">
 
-        </div>
-        <div class="music">
+            <div>
+                <img src="assets/images/logo.png" alt="Logo for the company" id="navlogo">
+            </div>
 
+            <div class="popup" onclick="popUp()">Instructions!
+                <span class="popuptext" id="myPopup">This is an easy, memory game where we want you to match all the cards before the time runs out, simply click on two cards and memorize the images on them to try and match the correct animals together before the time runs out!</span>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Difficulty</button>
+                <div class="dropdown-content">
+                  <a href="index.html">Beginner</a>
+                  <a href="#">Advanced</a>
+                </div>
+              </div>
         </div>
-    </div>
+    </nav>
+
     <h1 class="page-head">Mad-Matchmaking Game</h1>
 
     <!--
@@ -56,6 +70,9 @@
 
         <!--This is the cards container where the game will take place-->
         <div class="card-div ">
+        <!-- Delete all the divs and code them into the js file create an array
+        select a random element form a javascript array -->
+       
             <div class="card visible">
                 <div class="backface card-face">
                     <img src="assets/images/hippo.png" alt="Image of a cartoon hippo" class="hippo animals">
@@ -154,6 +171,15 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 
