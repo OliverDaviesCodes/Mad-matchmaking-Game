@@ -20,6 +20,102 @@ class AudioController {
     }
 }
 
+const cards = [
+    {
+      name: 'hippo',
+      alt: 'this is an image of a hippo'
+    },
+    {
+      name: 'lion',
+      alt: 'this is an image of a lion'
+    },
+    {
+      name: 'tortoise',
+      alt: 'this is an image of a tortoise'
+    },
+    {
+        name: 'Elephant',
+        alt: 'this is an image of a elephant'
+      },
+      {
+        name: 'giraffe',
+        alt: 'this is an image of a giraffe'
+      },
+      {
+        name: 'monkey',
+        alt: 'this is an image of a monkey'
+      },
+      {
+        name: 'panda',
+        alt: 'this is an image of a panda'
+      },
+      {
+        name: 'penguin',
+        alt: 'this is an image of a penguin'
+      },
+      {
+        name: 'squirrel',
+        alt: 'this is an image of a squirrel'
+      },
+      {
+        name: 'zebra',
+        alt: 'this is an image of a zebra'
+      },
+      {
+        name: 'dolphin',
+        alt: 'this is an image of a dolphin'
+      },
+      {
+        name: 'goat',
+        alt: 'this is an image of a goat'
+      },
+  ]; // length = 12 unique cards
+  
+  // easy = 6 unique cards
+  // hard = 10 unique cards
+let cardsDiv = document.getElementsByClassName('card-div');
+
+let randomizer = (n) => {
+
+    let cardsCopy = [...cards];
+    let arr = [];
+    for(let i = 0; i < n; i++){
+        let randomCards = Math.floor (Math.random() * cardsCopy.length);
+        arr.push(cardsCopy[randomCards]);
+        cardsCopy.splice(randomCards, 1)
+    }
+    return arr;
+  // randomly select n number of cards from cardsList;
+};
+
+let renderCards = (difficulty) => {
+  let numCards = difficulty = 'easy' ? 6 : 10;
+  let selectedCards = randomizer(numCards);
+  let innerHtml = '';
+
+  console.log(selectedCards)
+  
+  selectedCards.map(({name, alt}) => {
+    return innerHtml += `<div class="card visible">
+        <div class="backface card-face">
+            <img src="assets/images/${name}.png" alt="${alt}" class="animals">
+        </div>
+        <div class="frontface card-face">
+            <img src="assets/images/logo.png" alt="mad-matchmaking logo" class="logo">
+        </div>
+      </div>`;
+  })
+
+  innerHtml += innerHtml;
+
+  cardsDiv[0].innerHTML = innerHtml
+};
+
+renderCards();
+ 
+
+
+
 class matchmaking {
     constructor(totalTime, cards){
         this.cardsArray = cards;
@@ -158,5 +254,7 @@ function ready() {
             game.turnCard(card);
         });
     });
+
+   
 }
 ready();
