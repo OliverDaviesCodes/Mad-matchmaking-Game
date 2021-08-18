@@ -122,18 +122,18 @@ renderCards();
 
 
 class matchmaking {
-    constructor(time, cards) {
+    constructor(gameTime, cards) {
         this.cardsArray = cards;
-        this.totalTime = time;
-        this.timeRemaining = time;
+        this.gameTime = gameTime;
+        this.timeRemaining = gameTime;
         this.timer = document.getElementById('time-remaining');
-        this.flipper = document.getElementById('flips');
+        this.countFlips = document.getElementById('flips');
         this.audioController = new AudioController();
     }
     startGame() {
-        this.checkCard = null;
+        this.cardToCheck = null;
         this.totalClicks = 0;
-        this.timeRemaining = this.totalTime;
+        this.timeRemaining = this.gameTime;
         this.matchedCards = [];
         this.busy = true;
 
@@ -145,7 +145,7 @@ class matchmaking {
         }, 500);
         this.hideCards();
         this.timer.innerHTML = this.timeRemaining;
-        this.flipper.innerHTML = this.totalClicks;
+        this.countFlips.innerHTML = this.totalClicks;
     }
     hideCards() {
         this.cardsArray.forEach(card => {
@@ -157,24 +157,25 @@ class matchmaking {
     turnCard(card) {
         if (this.canTurnCard(card)) {
             this.totalClicks++;
-            this.ticker.innerHTML = this.totalClicks;
+            this.countFlips.innerHTML = this.totalClicks;
             card.classList.remove('visible');
 
-            if (this.checkCard)
+            if (this.cardToCheck)
                 this.checkForMatch(card);
             else
-                this.checkCard = card;
+                this.cardToCheck = card;
         }
     }
 
     checkForMatch(card) {
-        if (this.cardType(card) === this.cardType(this.checkCard))
+        if (this.cardType(card) === this.cardType(this.cardToCheck))
+            // if matched
 
-            this.matched(card, this.checkCard);
+            this.matched(card, this.cardToCheck);
         else
-            this.misMatched(card, this.checkCard);
+            this.misMatched(card, this.cardToCheck);
 
-        this.checkCard = null;
+        this.cardToCheck = null;
     }
 
     matched(card1, card2) {
@@ -197,7 +198,7 @@ class matchmaking {
     }
 
 
-    cardType(card) {
+    cardType(card) { //maybe an issue at the index value
         return card.getElementsByClassName('animals')[0].src;
     }
 
