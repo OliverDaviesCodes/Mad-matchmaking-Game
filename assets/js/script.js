@@ -122,16 +122,16 @@ renderCards();
 
 
 class matchmaking {
-    constructor(totalTime, cards) {
+    constructor(time, cards) {
         this.cardsArray = cards;
-        this.totalTime = totalTime;
-        this.timeRemaining = totalTime;
+        this.totalTime = time;
+        this.timeRemaining = time;
         this.timer = document.getElementById('time-remaining');
-        this.ticker = document.getElementById('flips');
+        this.flipper = document.getElementById('flips');
         this.audioController = new AudioController();
     }
     startGame() {
-        this.cardToCheck = null;
+        this.checkCard = null;
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
@@ -145,7 +145,7 @@ class matchmaking {
         }, 500);
         this.hideCards();
         this.timer.innerHTML = this.timeRemaining;
-        this.ticker.innerHTML = this.totalClicks;
+        this.flipper.innerHTML = this.totalClicks;
     }
     hideCards() {
         this.cardsArray.forEach(card => {
@@ -160,22 +160,21 @@ class matchmaking {
             this.ticker.innerHTML = this.totalClicks;
             card.classList.remove('visible');
 
-            if (this.cardToCheck)
+            if (this.checkCard)
                 this.checkForMatch(card);
             else
-                this.cardToCheck = card;
+                this.checkCard = card;
         }
     }
 
     checkForMatch(card) {
-        if (this.cardType(card) === this.cardType(this.cardToCheck))
-            // if matched
+        if (this.cardType(card) === this.cardType(this.checkCard))
 
-            this.matched(card, this.cardToCheck);
+            this.matched(card, this.checkCard);
         else
-            this.misMatched(card, this.cardToCheck);
+            this.misMatched(card, this.checkCard);
 
-        this.cardToCheck = null;
+        this.checkCard = null;
     }
 
     matched(card1, card2) {
@@ -198,7 +197,7 @@ class matchmaking {
     }
 
 
-    cardType(card) { //maybe an issue at the index value
+    cardType(card) {
         return card.getElementsByClassName('animals')[0].src;
     }
 
@@ -241,7 +240,7 @@ function ready() {
 
     let overlays = Array.from(document.getElementsByClassName('game-overlay'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new matchmaking(50, cards);
+    let game = new matchmaking(100, cards);
     // start game overlay
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {

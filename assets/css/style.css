@@ -201,6 +201,15 @@ html {
 
 }
 
+#advanced {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: 30px;
+
+}
+
 .card-face {
     background-color: #a7bbac;
     width: 100%;
