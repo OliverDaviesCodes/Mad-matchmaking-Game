@@ -102,13 +102,14 @@ My goal was to create a fun jungle styled game where the user can match various 
  ### Languages
  * [HTML5](https://en.wikipedia.org/wiki/HTML5)
  * [CSS3](https://en.wikipedia.org/wiki/CSS)
+ * [JS](https://en.wikipedia.org/wiki/JavaScript)
 
  ### Libraries and frameworks Used
  * [Bootstrap 4.2.1](https://getbootstrap.com/docs/4.2)
  * [Google Fonts](https://fonts.google.com/)
  * [Font Awesome](https://fontawesome.com/)
  * [W3schools](https://www.w3schools.com/)
-
+* [Pixabay](https://pixabay.com/)
 ### Tools
 * 
 
@@ -116,7 +117,7 @@ My goal was to create a fun jungle styled game where the user can match various 
 
 ### functionality Testing
  #### 
-
+Ran my code through the HTML W3C validator and it came back with no errors
 #### 
 
 #### 
