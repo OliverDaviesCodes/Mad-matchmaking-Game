@@ -7,26 +7,40 @@
 ## User Experience (UX)
 
 ### Project Goals
-The goals of this project is to create a simple card matchmaking game focused on the ability to match two cards from memory. This site should be user friendly, easily accessible
+The goals of this project is to create a simple card matchmaking game focused on the ability to match two cards from memory. This site should be user friendly, easily accessible and me aimed at a target audience mostly for children. 
+It should have to primary levels with the possibility of more in the future an easy level and a hard level. Each with varying amount of cards.
 
 ### User Goals
-
+- The site should be easy to access and maneouver around.
+- the site should have a complimentary color palette through-out for design purposes and to make it more aesthetic.
+- The user should be able to complete a game in a set amount of time and document the number of turns it took them to get to completion
+- The user should be able to identify when they match cards through an animation, or when they misMatch cards through them being turned back around.
+- The game should notify a success or failure, and if its a failure or success the game should reset back to its original form.
+- the Game should access an array of animals each time its loaded so every game will always have different animals for the users to experience.
+- The user should easily be able to progress from the beginner to the advanced level from any point with-in the game.
+- There should be music that creates a sense of being in the jungle when they play the game to hieghten the experience provided
 
 ### User Stories
 
 
 ### Site Owner Goals
-
+My goal was to create a fun jungle styled game where the user can match various cards of animals. The game should have varying levels of difficulty so that the user can progress forward through the game and get more of an experience. I want to implement sound in the form of ambient sound to create a more realistic in-depth experience for the user when they play the game. There should be notifications of success and failure and something that identifys how your doing through-out the game process.
 
 ### User requirements and expectations
-
+- The user should be able to match cards from different visual images
+- The user should be able to identify and memorize locations of multiple images 
+- the user should be able to move around a basic website
+- the user should be able to progress through different difficulties of the game
+- The user is expected to complete the game in a set amount of time
 
 
 ### Colours
 
 
 ### Font and styling
- 
+ I decided to style this game with the mindset that the target audience would be aimed at more children than adults even though, adults are welcome to play the game. The game as a simple cartoonish style with an aim on cartoon animals as the main things to match with-in the game. Thus the game was given a more jungle atmosphere and jungle music to create a more immersive experience through-out.
+ I decided to stick with a more earthy colour scheme and thus its based off of a lot of greens and browns in accordance to the nature of the game.
+ The font that was used is a more Cursive styled font to keep the game in the more childish and fun nature than structured and orderly. Its meant ot be more of an experience for the users than information being provided.
 
 ## About
 
