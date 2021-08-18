@@ -160,6 +160,16 @@ html {
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+.sticker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#crocodile {
+    border: 0px none;
+}
+
 .game-info-div {
     grid-column: 1 / -1;
     display: flex;
