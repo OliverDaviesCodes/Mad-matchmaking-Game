@@ -200,6 +200,23 @@ html {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .card {
+        height: 125px;
+        width: 75px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 40px;
+    }
+
+    .animals {
+        height: 75px;
+        width: 40px;
+    }
+}
+
 .card.visible:hover {
     cursor: pointer;
 }
