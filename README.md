@@ -6,6 +6,15 @@
 
 ## User Experience (UX)
 
+As a visitor using the website for the first time, I want…
+
+* The purpose of the website to be immediately apparent, so I can quickly trust that the website will suit my needs.
+* To be able to navigate the site intuitively and with ease, so that my time isn’t wasted.
+* Instructions of how to use the platform to be clearly presented, so I can start using the platform as quickly as possible.
+* Clear visual feedback when I submit either a correct or incorrect answer, so I know clearly the areas on which I need to improve.
+* The website to be visually appealing with good colour contrast, so I’m not distracted from the learning experience.
+* The learning experience to be engaging and challenging, so that I am stimulated by the experience.
+
 ### Project Goals
 The goals of this project is to create a simple card matchmaking game focused on the ability to match two cards from memory. This site should be user friendly, easily accessible and me aimed at a target audience mostly for children. 
 It should have to primary levels with the possibility of more in the future an easy level and a hard level. Each with varying amount of cards.
@@ -54,41 +63,37 @@ My goal was to create a fun jungle styled game where the user can match various 
 
 ### Differences in deployed version:
  
-### Differences in deployed version:
- 
-
-### Differences in deployed version:
-
-
-### Differences in deployed version:
- *
-
 
 ## Features
 
  
-
-### 
-
-### 
-   
-# 
-
-### 
-
-
-# 
-
-### 
-# 
-
-###
-
-
-# 
-
-### 
  
+### Instructions
+* There is a pop up instructions that can be toggled on and off  so that there is an easy understanding of how the game works and its functionality
+
+# 
+
+### Navbar
+* The navbar is highlighted at the top of the page for easy manouverability and access around the game.
+
+# 
+
+### DropDown Menu
+* There is a dropdown menu to choose between various difficulties so that there is a sense of progression through-out the game itself.
+# 
+
+### Heading
+* The heading is highlighted and visually Eye catching so you get an immediate sense of where you are and that the game is taking place.
+
+# 
+
+### Animations and Gameplay
+ * There is multiple animation and visual ques indicating success or failure through-out the game for easier user experience and a heightened sense of enjoyment when playing through the game.
+
+### Cards
+* There is a visually dynamic card display allowing for accessibility on all devices so anyone can play at any time.
+
+
 ### Footer
 
 * 
