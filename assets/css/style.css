@@ -206,6 +206,10 @@ html {
         width: 75px;
     }
 
+    .card-div {
+        margin: 0;
+    }
+
     .logo {
         height: 50px;
         width: 40px;
