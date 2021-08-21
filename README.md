@@ -2,9 +2,33 @@
 [Link to Live Website](https://oliverdaviescodes.github.io/Mad-matchmaking-Game/)
 ![Responsive Image](/assets/images/Responsive.png)
 
-## Contents ## 
-# Table of contents
+# Contents # 
+## Table of contents
 
+- [Mad-matchmaking Game](#mad-matchmaking-game)
+  - [Contents](#contents)
+- [Table of contents](#table-of-contents)
+  - [User Experience (UX)](#user-experience-ux)
+- [Wireframes](#wireframes)
+  - [Beginners](#beginners)
+  - [Advanced](#advanced)
+  - [Features](#features)
+- [Features left to implement](#features-left-to-implement)
+  - [Technologies Used](#technologies-used)
+  - [Testing](#testing)
+  - [Info Section](#info-section)
+- [External sources Used:](#external-sources-used)
+  - [Images](#images)
+  - [Colour Palette](#colour-palette)
+  - [Music](#music)
+  - [Logo](#logo)
+  - [Background-Image](#background-image)
+  - [Sticker](#sticker)
+  - [Sites Used for inspiration and learning](#sites-used-for-inspiration-and-learning)
+  - [Site used for responsive Image](#site-used-for-responsive-image)
+- [External Coding Tests](#external-coding-tests)
+  - [Deployment](#deployment)
+  - [Acknowledgements](#acknowledgements)
 ## User Experience (UX)
 
 As a visitor using the website for the first time, I want…
@@ -202,6 +226,9 @@ panda
 ## Site used for responsive Image
 - http://ami.responsivedesign.is/#
 
+## Site used for MArkDown TOC
+- https://luciopaiva.com/markdown-toc/
+
 
 # External Coding Tests
 
@@ -227,7 +254,7 @@ panda
 
 * Forking
 If you wish to use this repository or to propose changes to this project, you can fork it. Follow the steps below.
-1. Navigate to the repository, e.g. oliverdaviescodes/yoga-studio
+1. Navigate to the repository, e.g. oliverdaviescodes/mad-matchmaking game
 2. Click 'Fork' in the top-right corner.
 
 * cloning
