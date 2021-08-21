@@ -44,19 +44,15 @@ My goal was to create a fun jungle styled game where the user can match various 
 
 
 ### Colours
-
+![Colour Palette](/assets/images/)
 
 ### Font and styling
  I decided to style this game with the mindset that the target audience would be aimed at more children than adults even though, adults are welcome to play the game. The game as a simple cartoonish style with an aim on cartoon animals as the main things to match with-in the game. Thus the game was given a more jungle atmosphere and jungle music to create a more immersive experience through-out.
  I decided to stick with a more earthy colour scheme and thus its based off of a lot of greens and browns in accordance to the nature of the game.
  The font that was used is a more Cursive styled font to keep the game in the more childish and fun nature than structured and orderly. Its meant ot be more of an experience for the users than information being provided.
 
-## About
 
-
-
-
-## Wireframes
+# Wireframes
 
 ## Beginners
 
@@ -64,17 +60,17 @@ this is the Beginners game with 12 cards:
 ![WireFrames](/assets/images/Mad-matchmaking1.png)
 
 ### Differences in deployed version:
-
+There were not many differences in my deployed version in the beginners game as it was styled quite effectively. Added in a sticker into the heading for style purposes and adjusted some spacing and layout issues
 ## Advanced 
 
 This is the advanced game with 20 cards:
 ![WireFrame2](/assets/images/mad-matchmaking2.png)
+
 ### Differences in deployed version:
- 
+This was more of a mission to take on due to the size of the cards present so I , moved the layout around quite abit and then adjusted sizing and spacing for the cards and font to make it more visually appealling across all platforms.
 
 ## Features
 
- 
  
 ### Instructions
 * There is a pop up instructions that can be toggled on and off  so that there is an easy understanding of how the game works and its functionality
@@ -132,19 +128,21 @@ This is the advanced game with 20 cards:
 ## Testing
 
 ### functionality Testing
- #### 
-Ran my code through the HTML W3C validator and it came back with no errors
-#### 
 
-#### 
+ #### HTML W3C validator
+Ran my code through the HTML W3C validator and it came back with no errors
+#### W3C CSS Validator
+ Ran my code through the W3C css validator with no errors
+#### Ran my code through JS hint
+Ran my code through JS hint with no errors
 
 #### Info Section
 * 
 
-#### 
-
-#### 
-
+#### Game-play tested
+Tested the game across multpiple media sizes so it can be played anywhere effectively
+#### Peer Tested
+Had multiple individuals test the game for feedback and remarks about what could be better or different
 #### 
 
 #### Bugs
@@ -156,6 +154,8 @@ Ran my code through the HTML W3C validator and it came back with no errors
  ### W3CSS Validator
  [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
  
+### JS Hint
+[JS Hint](https://jshint.com/)
 
 ## Deployment
 * GitHub Pages
