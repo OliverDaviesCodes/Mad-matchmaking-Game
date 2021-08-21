@@ -58,9 +58,17 @@ My goal was to create a fun jungle styled game where the user can match various 
 
 ## Wireframes
 
+## Beginners
+
+this is the Beginners game with 12 cards:
+![WireFrames](/assets/images/Mad-matchmaking1.png)
 
 ### Differences in deployed version:
 
+## Advanced 
+
+This is the advanced game with 20 cards:
+![WireFrame2](/assets/images/mad-matchmaking2.png)
 ### Differences in deployed version:
  
 
@@ -80,12 +88,12 @@ My goal was to create a fun jungle styled game where the user can match various 
 
 ### DropDown Menu
 * There is a dropdown menu to choose between various difficulties so that there is a sense of progression through-out the game itself.
-# 
 
 ### Heading
 * The heading is highlighted and visually Eye catching so you get an immediate sense of where you are and that the game is taking place.
 
-# 
+### Game Info 
+* The user is provided with a time allocation for the game and how long is left before success or failure and the number of card flips generated through-out the process.
 
 ### Animations and Gameplay
  * There is multiple animation and visual ques indicating success or failure through-out the game for easier user experience and a heightened sense of enjoyment when playing through the game.
@@ -96,11 +104,14 @@ My goal was to create a fun jungle styled game where the user can match various 
 
 ### Footer
 
-* 
-
-### Features left to implement
+* The footer is there to encourage further exploration through social links and keeping the user interated with the game in the future.
 
 
+# Features left to implement
+
+* A scoreboard to keep track of the users high score and other potential users who want to compete.
+* A larger array of animals to pick from for more diversity in game.
+* Another tier of difficulty for even more advancement through-out the game
 
 ## Technologies Used
 

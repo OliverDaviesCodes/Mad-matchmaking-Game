@@ -95,7 +95,7 @@ let renderCards = () => {
     let selectedCards = randomizer(numCards);
     let innerHtml = '';
 
-    console.log(selectedCards)
+    console.log(selectedCards);
 
     selectedCards.forEach(({
         name,
@@ -103,13 +103,13 @@ let renderCards = () => {
     }) => {
         innerHtml += `<div class="card visible">
         <div class="backface card-face">
-            <img src="assets/images/${name}.png" alt="${alt}" class="animals">
+            <img src="assets/images/${name}.png" alt="${alt}" class="animals" id="animals">
         </div>
         <div class="frontface card-face">
-            <img src="assets/images/logo.png" alt="mad-matchmaking logo" class="logo">
+            <img src="assets/images/logo.png" id ="logo" alt="mad-matchmaking logo" class="logo">
         </div>
       </div>`;
-    })
+    });
 
     innerHtml += innerHtml;
 
@@ -129,7 +129,7 @@ class matchmaking {
         this.timer = document.getElementById('time-remaining');
         this.countFlips = document.getElementById('flips');
         this.audioController = new AudioController();
-    }
+    };
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -152,7 +152,7 @@ class matchmaking {
             card.classList.add('visible');
             card.classList.remove('matched');
         });
-    }
+    };
     // Flipping Cards
     turnCard(card) {
         if (this.canTurnCard(card)) {
