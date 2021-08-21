@@ -81,7 +81,7 @@ let randomizer = (n) => {
     for (let i = 0; i < n; i++) {
         let randomCards = Math.floor(Math.random() * cardsCopy.length);
         arr.push(cardsCopy[randomCards]);
-        cardsCopy.splice(randomCards, 1)
+        cardsCopy.splice(randomCards, 1);
     }
 
     return arr;
@@ -113,7 +113,7 @@ let renderCards = () => {
 
     innerHtml += innerHtml;
 
-    cardsDiv[0].innerHTML = innerHtml
+    cardsDiv[0].innerHTML = innerHtml;
 };
 
 renderCards();
@@ -129,7 +129,7 @@ class matchmaking {
         this.timer = document.getElementById('time-remaining');
         this.countFlips = document.getElementById('flips');
         this.audioController = new AudioController();
-    };
+    }
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -152,7 +152,7 @@ class matchmaking {
             card.classList.add('visible');
             card.classList.remove('matched');
         });
-    };
+    }
     // Flipping Cards
     turnCard(card) {
         if (this.canTurnCard(card)) {
@@ -234,7 +234,7 @@ class matchmaking {
 
     canTurnCard(card) {
         return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck)
-    }
+    };
 }
 
 function ready() {
